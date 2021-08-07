@@ -406,8 +406,8 @@ margin-bottom: 3rem;
 .navbar-brand{display:inline-block;padding-top:2rem;padding-bottom:2rem;font-size:2rem;margin-left:-1.5rem;}
 .navbar-links li:first-child{margin-left:0rem;}
 .navbar-links li{display:inline-block;margin-left:4rem;}
-.navbar-links .link-text{font-size:1.5rem;}
-.navbar-links .link-text.active{color: #000;font-weight: 700;}
+.navbar-links .link-text{font-size:1.5rem;font-weight: 700;}
+.navbar-links .link-text.active{color:#D81B60;font-weight: 700;}
 
 /*section*/
 .project-desc-section{padding-top:8rem;padding-bottom:8rem;}
@@ -452,6 +452,7 @@ margin-bottom: 3rem;
 .bg-sub-pororo{background-color:#072637;}
 .bg-senappsm{background-color:#222;}
 .bg-vidmix{background-color:#fd397a;}
+.bg-sub-vidmix{background-color:#1d1e26;}
 .bg-wecandeo{background-color:#3fb1d7}
 #loginlogo{
 width: 280px;

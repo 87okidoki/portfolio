@@ -3,36 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
 /*reset*/
 * {margin: 0;padding: 0;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;box-sizing: border-box; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
@@ -361,8 +331,8 @@ h5{font-size: 1.5rem; line-height:2.7rem;}
 .btn-point{color:#fff;background:#0e0d0d;}
 .btn-border{color:#222;background:#fff; border:1px solid #ededed ;}
 .btn-full{font-size: 1.5rem;width: 100%;height:48px;line-height: 48px;font-weight:700;text-align: center;}
-.btn-large{font-size: 1.3rem;min-width:200px;height:52px;line-height:52px;font-weight:700;text-align: center;}
-.btn-medium{font-size: 1.3rem;min-width:155px; height:42px;line-height:40px;text-align: center;}
+.btn-large{font-size: 1.3rem;min-width:150px;height:52px;line-height:52px;font-weight:700;text-align: center;}
+.btn-medium{font-size: 1.3rem;min-width:100px; height:42px;line-height:40px;text-align: center;}
 .btn-border > .fa-angle-left{vertical-align: middle;padding-right: 20px;}
 .btn-border > .fa-angle-right{vertical-align: middle;padding-left: 20px;}
 .wrap{ overflow: hidden;}
@@ -420,7 +390,7 @@ transform: scale3d(1.04,1.04,1.04);
 font-size:11px;
 font-weight: 800;
 color: #222;
-border:2px solid rgb(172, 172, 172);
+border:2px solid rgb(243, 243, 243);
 width:52px;
 height:52px;
 display: inline-block;
@@ -428,6 +398,7 @@ text-align:center;
 vertical-align:middle;
 line-height:45px;
 border-radius: 50%;
+margin-bottom: 3rem;
 }
 /*navbar*/
 .navbar .container{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap; -ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;}

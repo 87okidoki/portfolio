@@ -191,6 +191,15 @@
     <script type="text/javascript">
        AOS.init();
 
+        //login-logo
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById("loginlogo"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "resources/js/loginlogo.json"
+	    });
+
     </script>
 </body>
 </html>

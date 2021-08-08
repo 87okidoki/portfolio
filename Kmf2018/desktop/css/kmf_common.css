@@ -107,13 +107,13 @@ mark {display: inline-block; background-color: #fff; color: #102328; line-height
 .main-section{background-color:#ffea00;}
 .main-section .section-bg_main{height: 100vh; min-height: 947px; background: url("../images/section01_main-top.png") no-repeat center;}
 .program-section{background-color:#1fcfff;}
-.program-section .section-bg_program{height:4473px; background: url("../images/section02_program.png") no-repeat top;}
+.program-section .section-bg_program{height:4473px;    background: url(../images/section02_program.png) center top no-repeat;}
 .lineup-section{background-color:#ffec00; padding-bottom: 100px;}
-.lineup-section .section-bg_lineup{height:auto; background: url("../images/section03_lineup.png") no-repeat top;}
+.lineup-section .section-bg_lineup{height:auto; }
 .schedule-section{background-color:#ff0cb7;}
-.schedule-section .section-bg_schedule{height:auto; background: url("../images/section04_schedule.png") no-repeat top; padding-bottom: 100px;}
+.schedule-section .section-bg_schedule{height:auto;padding-bottom: 100px;}
 .ticket-section{background-color:#34315d; padding-bottom: 100px;}
-.ticket-section .section-bg_ticket{height:auto; background: url("../images/section05_ticket.png") no-repeat top;}
+.ticket-section .section-bg_ticket{height:auto;}
 .event-section{background-color:#8f18db; padding-bottom: 100px;}
 .event-section .section-bg_event{height:auto; background: url("../images/section06_event.png") no-repeat top;}
 .notice-section{background-color:#fff;}
@@ -312,7 +312,7 @@ mark {display: inline-block; background-color: #fff; color: #102328; line-height
 .notice-section .notice-area03 ul li{font-size: 14px; color: #444; line-height: 26px;}
 
 .notice-area{border-bottom: 1px solid #ededed; padding: 20px 0;}
-.notice-area .notice-contents{overflow: hidden; padding: 0 20px;}
+.notice-area .notice-contents{overflow: hidden; }
 .notice-area .notice-contents .notice-header{height:60px; line-height: 60px;}
 .notice-area .list_vertical-scroll{position: relative; overflow: hidden; float: left; width: 840px; height:60px;  padding: 0 20px;}
 .notice-area .list_vertical-scroll li{width: 840px; float: left; line-height: 60px;}
@@ -322,7 +322,7 @@ mark {display: inline-block; background-color: #fff; color: #102328; line-height
 .notice-area .btn:hover .icon-arrow:before, .notice-area .btn:hover .icon-arrow:after{    background: #888;}
 
 /* view */
-.section-bg_view {height: 100vh; min-width: 1280px; min-height: 947px; background: url("../images/view_bg.png") no-repeat center; background-size: cover;} 
+
 .view-section{background-color: #1fcfff;}
 .view-section .program-header{padding:80px 20px 0;}
 .view-section .program-header .main-title{font-family: 'binggraeB', sans-serif; color:#fff; font-size:60px; font-weight: 600; text-align:center;}

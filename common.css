@@ -435,14 +435,14 @@ margin-bottom: 3rem;
 
 /*project*/
 .bg-wassup{background-color:#5c1af0;}
-.project-wassup .wassup-logo{max-width:300px; margin-bottom:3rem;}
+.wassup-logo{max-width:200px;margin-top:5rem;margin-bottom:5rem;}
+.wecandeo-logo{max-width:250px; margin-bottom:5rem;}
+.starq-logo{max-width:250px;margin-top:5rem;margin-bottom:5rem;}
 
-.starq-logo{max-width:300px; margin-bottom:3rem;}
-
-.project-mgoonlive .mgoonlive-logo{width:400px; margin-bottom:5rem;}
+.mgoonlive-logo{width:250px; margin-bottom:5rem;}
 .bg-mgoonlive{background-color:#a4c727;}
 
-.project-pulja .pulja-logo{width:250px; margin-bottom:5rem;}
+.project-pulja .pulja-logo{width:200px; margin-bottom:5rem;}
 .bg-pulja{background-color:#ff6d37;}
 
 .bg-kmf{background-color:#ffea01;}

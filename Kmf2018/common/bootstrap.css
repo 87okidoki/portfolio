@@ -1,0 +1,51 @@
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}

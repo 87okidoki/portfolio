@@ -1,0 +1,52 @@
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin transition-property($property) {
+  -webkit-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+}
+
+@mixin transition-delay($delay) {
+  -webkit-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin transition-timing-function($function) {
+  -webkit-transition-timing-function: $function;
+  -o-transition-timing-function: $function;
+  transition-timing-function: $function;
+}
+
+@mixin tran-ease-in-out {
+  @include transition(all 0.3s cubic-bezier(0, 0.21, 0.03, 1.01));
+}
+
+@mixin tran-delay-first {
+  -webkit-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+
+@mixin tran-delay-second {
+  -webkit-transition-delay: 0.15s;
+  -moz-transition-delay: 0.15s;
+  -ms-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+@mixin tran-delay-third {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}

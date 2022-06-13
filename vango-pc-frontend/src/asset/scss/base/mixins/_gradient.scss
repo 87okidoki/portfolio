@@ -1,0 +1,4 @@
+@mixin text-gradient {
+  background-image: -o-radial-gradient(11% 11%, circle, $color-primary, $color-primary-violet, $color-primary-pink);
+  background-image: radial-gradient(circle at 11% 11%, $color-primary, $color-primary-violet, $color-primary-pink);
+}

@@ -1,0 +1,41 @@
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transform-translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin transform-rotate($r) {
+  -webkit-transform: rotate($r);
+  -ms-transform: rotate($r);
+  transform: rotate($r);
+}
+
+@mixin transform-rotateY($r) {
+  -webkit-transform: rotateY($r);
+  -ms-transform: rotateY($r);
+  transform: rotateY($r);
+}
+
+@mixin transform-scale($s) {
+  -webkit-transform: scale($s);
+  -ms-transform: scale($s);
+  transform: scale($s);
+}
+
+@mixin translateY($y) {
+  -webkit-transform: translateY($y);
+  -ms-transform: translateY($y);
+  transform: translateY($y);
+}
+
+@mixin translateX($X) {
+  -webkit-transform: translateX($X);
+  -ms-transform: translateX($X);
+  transform: translateX($X);
+}

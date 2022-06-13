@@ -1,0 +1,13 @@
+.common-title-box {
+  text-align: left;
+  width: 100%;
+  max-width: 432px;
+  .title {
+    font-size: $title-text;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  .sub-text {
+    margin-top: 20px;
+  }
+}

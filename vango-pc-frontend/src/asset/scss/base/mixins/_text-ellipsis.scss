@@ -1,0 +1,20 @@
+@mixin text-ellipsis($display, $line, $w: 100%) {
+  @if ($line == 1) {
+    display: $display;
+    max-width: $w;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  } @else {
+    display: -webkit-box;
+    width: $w;
+    overflow: hidden;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+}

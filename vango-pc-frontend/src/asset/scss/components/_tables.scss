@@ -1,0 +1,22 @@
+.table {
+  width: 100%;
+  .table-head th {
+    width: 33.333%;
+    height: 40px;
+    vertical-align: middle;
+    border: 0.5px solid #c7a5e9;
+    background-color: #f5ebff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #848484;
+  }
+  .table-body td {
+    height: 40px;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #848484;
+    background-color: #fff;
+    border: 0.5px solid #c7a5e9;
+    border-top: 0px;
+  }
+}

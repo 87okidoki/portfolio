@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'SFProDisplayRegular';
+  src: url('../../fonts/SFProDisplayRegular.eot'); /* IE9*/
+  src: url('../../fonts/SFProDisplayRegular.eot?#iefix') format('embedded-opentype'),
+    /* chrome、firefox */ url('../../fonts/SFProDisplayRegular.woff') format('woff'),
+    /* chrome、firefox */ url('../../fonts/SFProDisplayRegular.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('../../fonts/SFProDisplayRegular.svg#SFProDisplayRegular') format('svg'); /* iOS 4.1- */
+  //font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'SFProDisplayBold';
+  src: url('../../fonts/SFProDisplayBold.eot'); /* IE9*/
+  src: url('../../fonts/SFProDisplayBold.eot?#iefix') format('embedded-opentype'),
+    /* chrome、firefox */ url('../../fonts/SFProDisplayBold.woff') format('woff'),
+    /* chrome、firefox */ url('../../fonts/SFProDisplayBold.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../../fonts/SFProDisplayBold.svg#SFProDisplayBold')
+      format('svg'); /* iOS 4.1- */
+  //font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('../../fonts/NanumBarunGothic.eot'); /* IE9*/
+  src: url('../../fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+    /* chrome、firefox */ url('../../fonts/NanumBarunGothic.woff') format('woff'),
+    /* chrome、firefox */ url('../../fonts/NanumBarunGothic.ttf') format('truetype')
+       /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../../fonts/NanumBarunGothic.svg#NanumBarunGothic')
+       format('svg'); /* iOS 4.1- */
+    font-style: normal;
+    font-display: block;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+html {
+  font-size: 62.25%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  // scroll-behavior: smooth;
+}
+body {
+ height: 100%;
+  font-size: 1.8rem;
+  overflow: auto scroll;
+  background-color: #fff;
+}
+// prettier-ignore
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{	
+  vertical-align: baseline;
+  border:none;
+}
+
+// prettier-ignore
+body, p, td, a, li, input, button, label, textarea, select, sub {
+  font-family: $font-style;
+  color:$color-black;
+  letter-spacing: -0.5px;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  word-break: keep-all;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+svg {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  caption {
+    @include hide;
+  }
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: $border-none;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+menu,
+ul,
+ol {
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input {
+  vertical-align: middle;
+  &[readonly],
+  &[readonly]:focus {
+    border: $border-none;
+  }
+  &[type='password'] {
+    color: $color-black;
+  }
+  &[type='text'] {
+    color: $color-black;
+  }
+  &[type='search'] {
+    color: $color-black;
+  }
+  &[type='radio'] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+  }
+  &[type='text']::-ms-clear {
+    display: none;
+  }
+
+
+}
+
+
+
+input::placeholder{
+  color: rgba(0, 0, 0, 0.2);
+}
+input:-mos-input-placeholder{
+  color: rgba(0, 0, 0, 0.2);
+}
+input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+input::-moz-input-placeholder{
+  color: rgba(0, 0, 0, 0.2);
+}
+input:-ms-input-placeholder 
+{
+  color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+summary,
+select {
+  &:focus {
+    outline: 2px solid #000;
+  }
+}
+
+.skip-navigation,
+.blind,
+hr {
+  @include hide;
+}
+
+:focus-visible {
+  outline: 2px solid #000;
+}
+.form-control:focus-visible {
+  outline: 2px solid #c7a5e9;
+}
+

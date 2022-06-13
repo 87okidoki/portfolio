@@ -1,0 +1,51 @@
+image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+# before_script:
+#   - cd /efs/repo/event-frontend
+
+# build_for_develop:
+#  stage: build
+#  only:
+#    - develop
+#  script:
+#    - git add -A
+#    - git stash
+#    - git checkout develop
+#    - git pull
+#    - rm -rf ./build/*
+#    - yarn install
+#    - CI=false yarn build:development
+
+# deploy_to_develop:
+#  stage: deploy
+#  only:
+#    - develop
+#  variables:
+#    BUCKET_NAME: develop-vango-event
+#    DISTRIBUTION_ID: EET83UQVUJLZ9
+#  script:
+#    - aws s3 sync build s3://$BUCKET_NAME --delete --acl public-read
+#    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+
+# build_for_production:
+#   stage: build
+#   only:
+#     - master
+#   script:
+#     - git add -A
+#     - git stash
+#     - git checkout master
+#     - git pull
+#     - rm -rf ./build/*
+#     - yarn install
+#     - CI=false yarn build:production
+
+# deploy_to_develop:
+#   stage: deploy
+#   only:
+#     - production
+#   variables:
+#     BUCKET_NAME: vango-event
+#     DISTRIBUTION_ID:
+#   script:
+#     - aws s3 sync build s3://$BUCKET_NAME --delete --acl public-read
+#     - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"

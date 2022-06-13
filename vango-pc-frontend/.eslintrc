@@ -1,0 +1,89 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "allowImportExportEverywhere": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": ["react", "import", "react-hooks", "@typescript-eslint", "prettier", "jsx-a11y"],
+  "rules": {
+    "import/extensions": "off",
+    "import/no-named-as-default-member": 0,
+    "import/order": [2, { "groups": ["external", "index", "sibling", "parent", "internal", "builtin"] }],
+    "react/jsx-filename-extension": [
+      0,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/jsx-props-no-spreading": 0,
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "no-nested-ternary": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
+    "react/no-array-index-key": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "jsx-a11y/no-autofocus": "off",
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-unused-expressions": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "@typescript-eslint/await-thenable": "off"
+      }
+    }
+  ]
+}

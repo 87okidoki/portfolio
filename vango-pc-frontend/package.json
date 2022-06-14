@@ -11,6 +11,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@craco/craco": "^6.4.3",
@@ -65,5 +67,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  }, 
+   "homepage": "https://github.com/87okidoki/portfolio"
 }

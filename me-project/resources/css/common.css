@@ -1329,6 +1329,42 @@ h5 {
 .bg-vango .project-desc-text {
   color: #a839ff;
 }
+.bg-ai-bility{
+  background-color: #088ef5;
+    color: #fff;
+}
+
+.bg-ai-bility .project-desc-text {
+    color: #fff;
+}
+
+.bg-ai-connect {
+  background-color: #f5f5f5;
+  color:#088ef5;
+}
+
+.bg-ai-connect .project-desc-text {
+  color: #088ef5;
+}
+
+
+.bg-poc {
+  background-color: #f5f5f5;
+ color:#00bcda;
+ }
+
+ .bg-poc .project-desc-text {
+   color: #00bcda;
+ }
+
+ .bg-sql {
+   background-color: #f2f2f8;
+   color: #262263;
+ }
+
+ .bg-sql .project-desc-text {
+   color: #262263;
+ }
 #loginlogo {
   width: 280px;
   height: 116px;
